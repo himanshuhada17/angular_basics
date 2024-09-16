@@ -1,0 +1,9 @@
+<div *ngIf="product && product.price > 700">
+  <button type="button" (click)="notify()">Notify me!</button>
+  <button type="button" (click)="toggleString()">Show Content</button>
+  <div
+    [ngStyle]="{ 'background-color': stringContent ? 'red' : 'transparent' }"
+  >
+    <div *ngIf="stringContent">hann</div>
+  </div>
+</div>
